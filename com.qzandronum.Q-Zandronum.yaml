@@ -122,6 +122,7 @@ modules:
       - install -Dm 644 com.qzandronum.Q-Zandronum.desktop -t /app/share/applications
       - install -Dm 644 com.qzandronum.Q-Zandronum.appdata.xml -t /app/share/metainfo
       - install -Dm 644 com.qzandronum.Q-Zandronum.128.png /app/share/icons/hicolor/128x128/apps/com.qzandronum.Q-Zandronum.png
+      - install -Dm644 LICENSE.txt -t ${FLATPAK_DEST}/share/licenses/${FLATPAK_ID}/q-zandronum/
     sources:
       - type: file
         path: com.qzandronum.Q-Zandronum.desktop
@@ -132,6 +133,9 @@ modules:
       - type: file
         url: https://github.com/coelckers/gzdoom/raw/g4.13.2/soundfont/gzdoom.sf2
         sha256: a9058609b07c1f0e0c1f420e76c2e80ba78136e6173e836caab51ffb13e552f1
+      - type: file
+        url: https://raw.githubusercontent.com/IgeNiaI/Q-Zandronum/refs/heads/master/LICENSE.txt
+        sha256: 87083bc46a835899eed1ccfdebce3b279be47dcae48b4b8b7c9a045c0c9a853f
       - type: script
         dest-filename: doomseeker.sh
         commands:

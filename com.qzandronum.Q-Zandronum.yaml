@@ -77,7 +77,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/DoomseekerTeam/Doomseeker.git
-        commit: 766e704023aac917f829608bb0996ec977e0f84b
+        commit: 59617ba689a66a319ab98b543e8188cf474f7640
       - type: shell
         commands:
           # Package requires HG_ details for version numbers

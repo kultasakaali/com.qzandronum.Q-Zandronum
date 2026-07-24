@@ -140,7 +140,7 @@ modules:
         dest-filename: doomseeker.sh
         commands:
           # Insert clean zandronum config if none defined
-          - if [[ ! -f ~/.config/zandronum/zandronum.ini ]]; then
+          - if [ ! -f ~/.config/zandronum/zandronum.ini ]; then
           - /app/bin/q-zandronum -nosound -norun
           # Neccessery evil to ensure that Zandronum doesn't crash because of the outdated
           # FMOD library: https://zandronum.com/forum/viewtopic.php?t=9885

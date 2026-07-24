@@ -1,7 +1,7 @@
 app-id: com.qzandronum.Q-Zandronum
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.10'
+runtime-version: '5.15-25.08'
 command: doomseeker.sh
 
 finish-args:

@@ -73,7 +73,6 @@ modules:
     config-opts:
       - -DCMAKE_SKIP_RPATH=true
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DQt_PACKAGE=Qt6
     sources:
       - type: git
         url: https://github.com/DoomseekerTeam/Doomseeker.git

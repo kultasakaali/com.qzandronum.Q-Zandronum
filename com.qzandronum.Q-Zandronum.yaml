@@ -1,7 +1,7 @@
 app-id: com.qzandronum.Q-Zandronum
 runtime: org.kde.Platform
 sdk: org.kde.Sdk
-runtime-version: '6.10'
+runtime-version: '5.15-25.08'
 command: doomseeker.sh
 
 finish-args:
@@ -73,7 +73,6 @@ modules:
     config-opts:
       - -DCMAKE_SKIP_RPATH=true
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DQt_PACKAGE=Qt6
     sources:
       - type: git
         url: https://github.com/DoomseekerTeam/Doomseeker.git
@@ -140,7 +139,7 @@ modules:
         dest-filename: doomseeker.sh
         commands:
           # Insert clean zandronum config if none defined
-          - if [[ ! -f ~/.config/zandronum/zandronum.ini ]]; then
+          - if [ ! -f ~/.config/zandronum/zandronum.ini ]; then
           - /app/bin/q-zandronum -nosound -norun
           # Neccessery evil to ensure that Zandronum doesn't crash because of the outdated
           # FMOD library: https://zandronum.com/forum/viewtopic.php?t=9885
